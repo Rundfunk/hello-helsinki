@@ -28,7 +28,7 @@ jobs:
           tags: ${{ vars.DOCKERHUB_USERNAME }}/hello-helsinki:latest
 
       - name: Deploy to Render.com
-        uses: johnbeynon/render-deploy-action@v0.0.8
+        uses: ttskch/render-deploy@v1.0.0
         with:
           service-id: ${{ secrets.RENDER_SERVICE_ID }}
           api-key: ${{ secrets.RENDER_API_KEY }}
